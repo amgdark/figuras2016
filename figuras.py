@@ -6,3 +6,6 @@ class Figuras:
 			return lado * lado
 		except Exception, e:
 			return 'dato incorrecto'
+
+
+#desde vagrant

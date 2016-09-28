@@ -7,16 +7,18 @@ class TestFiguras(unittest.TestCase):
 		self.figura = Figuras()
 
 	def test_area_cuadrado_lado_6(self):
-		resultado = self.figura.cuadrado(6)
-		self.assertEqual(36,resultado)
+		self.cuadrado(6,36)
 
 	def test_area_cuadrado_lado_5(self):
-		resultado = self.figura.cuadrado(5)
-		self.assertEqual(25,resultado)
+		self.cuadrado(5,25)
 
 	def test_area_cuadrado_lado_g(self):
-		resultado = self.figura.cuadrado('g')
-		self.assertEqual('dato incorrecto',resultado)
+		self.cuadrado('g','dato incorrecto')
+
+	def cuadrado(self,lado,esperado):
+		resultado = self.figura.cuadrado(lado)
+		self.assertEqual(resultado,esperado)
+
 			
 	def tearDown(self):
 		pass
