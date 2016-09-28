@@ -12,6 +12,9 @@ class TestFiguras(unittest.TestCase):
 	def test_area_cuadrado_lado_5(self):
 		self.cuadrado(5,25)
 
+	def test_area_cuadrado_lado_7(self):
+		self.cuadrado(7,49)
+
 	def test_area_cuadrado_lado_g(self):
 		self.cuadrado('g','dato incorrecto')
 
